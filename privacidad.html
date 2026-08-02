@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · LumbreAI</title>
+<meta name="description" content="Política de privacidad de LumbreAI: qué datos maneja la app, con quién se comparten y cómo borrarlos.">
+<link rel="stylesheet" href="_estilo.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="index.html">
+    <svg class="flame" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 2c1.5 3.5-1 5-1 7a3 3 0 0 0 6 0c0-.8-.2-1.5-.5-2.2C18.8 8.6 20 11 20 13.5 20 18.2 16.4 22 12 22S4 18.2 4 13.5C4 8.5 8.5 6.5 12 2z" fill="#F0744A"/>
+    </svg>
+    <b>LumbreAI</b>
+  </a>
+  <div class="langs">
+    <button type="button" data-set="es" aria-pressed="true">ES</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+<h1>Política de privacidad</h1>
+<p class="updated">LumbreAI · Última actualización: 31 de julio de 2026</p>
+
+<div data-lang="es" class="on">
+<p>Esta es la política de privacidad de <b>LumbreAI</b>, una aplicación de fitness, nutrición, skincare y bienestar desarrollada por <b>Lucas Usamentiaga</b>, desarrollador individual con domicilio en España. Explica qué datos maneja la app, cómo, con quién se comparten y cómo puedes borrarlos.</p>
+<p>La idea de fondo es sencilla: <b>tus datos son tuyos y viven en tu móvil.</b> Solo salen de ahí en los casos concretos que se detallan abajo, y siempre porque tú has activado esa función.</p>
+
+<h2>1. Quién es el responsable y cómo contactar</h2>
+<p>Responsable: Lucas Usamentiaga (LumbreAI). Punto de contacto para cualquier asunto de privacidad, incluido el ejercicio de tus derechos: <a href="mailto:lucasusamentiaga@gmail.com">lucasusamentiaga@gmail.com</a>. Respondemos a las solicitudes en un plazo máximo de 30 días.</p>
+
+<h2>2. Datos que se quedan en tu dispositivo</h2>
+<p>LumbreAI está diseñada para funcionar sin conexión. Tus entrenos, comidas y macros, rutinas de skincare, medidas corporales, fotos de progreso, hábitos, diario, ánimo, sueño, rachas y logros se guardan en una base de datos local (SQLite) dentro de tu móvil. <b>Nada de esto se envía a ningún servidor.</b> Si desinstalas la app sin exportar una copia, esos datos desaparecen contigo.</p>
+
+<h2>3. Datos que sí salen del dispositivo</h2>
+<p><b>Cuenta y funciones sociales.</b> Al usar la app se crea una cuenta anónima en Supabase que identifica tu instalación en el servidor. Si activas las funciones sociales, se guardan en la nube tu nombre visible, un código para compartir, tus puntos y rangos, y la lista de personas con las que has aceptado ser amigo. Puedes usar la app entera sin esto.</p>
+<p><b>Inicio de sesión opcional.</b> Si entras con Google, Microsoft o Apple, se procesan tu nombre y tu correo únicamente para identificarte. Puedes entrar sin cuenta con la opción de empezar en el dispositivo.</p>
+<p><b>Funciones de inteligencia artificial.</b> Requieren tu permiso explícito, que se pide dentro de la app antes de enviar nada y que puedes retirar cuando quieras en Ajustes → IA en la nube. Con el permiso concedido se envía: tu mensaje al coach Brasa junto a un resumen de contexto (objetivos, racha y registros recientes); la foto del plato cuando estimas macros por imagen; la foto cuando analizas un outfit; y los ingredientes que escribes al generar una receta.</p>
+
+<div class="card warn">
+<p><b>Aviso importante sobre la IA.</b> Estas peticiones se procesan a través de proveedores externos, en concreto Groq y Google (Gemini). Al usarse sus planes gratuitos, <b>esos proveedores pueden emplear el contenido enviado para entrenar y mejorar sus propios modelos.</b> Por eso te pedimos que no envíes historiales médicos ni datos sensibles a través de estas funciones. Son opcionales y la app funciona sin ellas: sin permiso, el coach responde con su motor local, que no envía nada.</p>
+</div>
+
+<h2>4. Ubicación aproximada (solo si pulsas el botón del tiempo)</h2>
+<p>La pantalla de Alquimia tiene un botón para usar el tiempo de tu zona al recomendarte una fragancia. <b>Solo si lo pulsas</b>, la app averigua tu ubicación aproximada a partir de tu dirección IP y consulta la previsión.</p>
+<p>Para ello se contacta con uno de estos servicios, el primero que responda: <b>ipwho.is</b>, <b>ipapi.co</b> o <b>geojs.io</b>. Reciben tu dirección IP y devuelven una latitud, longitud y ciudad aproximadas. Con esa posición se consulta después <b>Open-Meteo</b> para la temperatura.</p>
+<p>La app <b>no usa el GPS</b> ni pide permiso de ubicación: la precisión es la de una ciudad, no la de una calle. Nada de esto se guarda en ningún servidor nuestro, y si no pulsas ese botón no se envía nada.</p>
+
+<h2>5. Actualizaciones de la app</h2>
+<p>Para poder corregir fallos sin que tengas que reinstalar, la app consulta una vez por semana si hay una versión nueva en el servicio de actualizaciones de <b>Expo</b> (u.expo.dev). Esa consulta transmite la versión que tienes instalada y el sistema operativo del móvil, junto con la dirección IP inherente a cualquier conexión. No se envía ningún dato tuyo ni de tus registros.</p>
+
+<h2>6. Informes de fallos automáticos</h2>
+<p>Cuando algo falla por dentro sin que se vea en pantalla (una función que no responde, una pantalla que se cierra sola, una operación que tarda demasiado), la app lo apunta en tu dispositivo y lo envía a <b>Supabase</b> para poder corregirlo. Es la misma infraestructura descrita en el punto 3.</p>
+<p><b>Qué se envía:</b> el mensaje técnico del error, en qué parte de la app ocurrió, cuántas veces se ha repetido, la versión de la app y el sistema operativo.</p>
+<p><b>Qué NO se envía:</b> tu nombre, tus fotos, tus comidas, tus entrenamientos, tus medidas ni ningún texto que hayas escrito. Antes de guardar nada, la app borra automáticamente del mensaje cualquier correo electrónico, ruta de fichero, dirección IP, identificador, clave o imagen que pudiera haberse colado.</p>
+<p><b>Cómo desactivarlo:</b> en Ajustes → Diagnóstico puedes apagarlo cuando quieras. Ahí también ves la lista completa de lo que se ha apuntado y puedes borrarla.</p>
+
+<h2>7. Otros servicios que consulta la app</h2>
+<p>El buscador de alimentos y el escáner de códigos de barras consultan las bases de datos abiertas OpenFoodFacts y OpenBeautyFacts. Estas consultas envían el término buscado o el código escaneado, no tus datos personales.</p>
+
+<h2>8. Para qué se usan los datos</h2>
+<p>Únicamente para que la app funcione: mostrarte tu progreso, generar respuestas del coach, estimar macros y sostener los rankings entre amigos. <b>LumbreAI no muestra publicidad, no perfila usuarios con fines comerciales y no vende datos personales a nadie.</b> Los datos de salud y forma física nunca se usan con fines publicitarios ni de marketing.</p>
+
+<h2>9. Seguridad</h2>
+<p>Toda comunicación con los servidores viaja cifrada mediante HTTPS. Las claves de los proveedores de IA viven exclusivamente en el servidor y nunca se incluyen en la aplicación. El acceso a los datos en la nube está restringido por políticas de seguridad a nivel de fila, de modo que cada cuenta solo puede leer y escribir lo suyo.</p>
+
+<h2>10. Conservación y borrado</h2>
+<p>Los datos locales se conservan en tu móvil mientras tengas la app instalada. Los datos en la nube se conservan mientras exista tu cuenta.</p>
+<p>Puedes borrarlo todo de forma permanente desde <b>Ajustes → Eliminar cuenta</b> dentro de la app, o solicitándolo desde <a href="borrar-cuenta.html">esta página</a>. El borrado elimina tu perfil, tus amistades, tus solicitudes pendientes y tu cuenta de autenticación en el servidor, además de toda la base de datos local. No es reversible y no conservamos copias. Antes de borrar, puedes exportar una copia completa desde Ajustes.</p>
+
+<h2>11. Tus derechos</h2>
+<p>Si te aplica el Reglamento General de Protección de Datos, tienes derecho a acceder a tus datos, rectificarlos, borrarlos, limitar u oponerte a su tratamiento, y a la portabilidad. La app ya te da acceso y portabilidad directos mediante la exportación, y borrado directo desde Ajustes. Para cualquier otra solicitud, escribe al correo de contacto.</p>
+
+<h2>12. Menores</h2>
+<p>LumbreAI no está dirigida a menores de la edad mínima legal de tu país para consentir el tratamiento de sus datos. Si eres menor, utiliza la app con la supervisión de un adulto responsable.</p>
+
+<h2>13. Cambios en esta política</h2>
+<p>Si esta política cambia, se actualizará la fecha del encabezado y se te avisará dentro de la app cuando el cambio sea relevante.</p>
+</div>
+
+<div data-lang="en">
+<p>This is the privacy policy of <b>LumbreAI</b>, a fitness, nutrition, skincare and wellbeing app developed by <b>Lucas Usamentiaga</b>, an individual developer based in Spain. It explains what data the app handles, how, who it is shared with and how you can delete it.</p>
+<p>The underlying idea is simple: <b>your data is yours and it lives on your phone.</b> It only leaves it in the specific cases detailed below, and always because you turned that feature on.</p>
+
+<h2>1. Who is responsible and how to get in touch</h2>
+<p>Controller: Lucas Usamentiaga (LumbreAI). Privacy point of contact for any matter, including exercising your rights: <a href="mailto:lucasusamentiaga@gmail.com">lucasusamentiaga@gmail.com</a>. Requests are answered within 30 days at most.</p>
+
+<h2>2. Data that stays on your device</h2>
+<p>LumbreAI is built to work offline. Your workouts, meals and macros, skincare routines, body measurements, progress photos, habits, journal, mood, sleep, streaks and achievements are stored in a local database (SQLite) inside your phone. <b>None of this is sent to any server.</b> If you uninstall the app without exporting a backup, that data goes with it.</p>
+
+<h2>3. Data that does leave the device</h2>
+<p><b>Account and social features.</b> Using the app creates an anonymous Supabase account that identifies your install on the server. If you turn on social features, the cloud stores your display name, a share code, your points and ranks, and the list of people you have accepted as friends. You can use the whole app without any of this.</p>
+<p><b>Optional sign-in.</b> If you sign in with Google, Microsoft or Apple, your name and email are processed solely to identify you. You can enter without an account using the start-on-this-device option.</p>
+<p><b>Artificial intelligence features.</b> These require your explicit permission, asked inside the app before anything is sent, and which you can withdraw at any time in Settings → Cloud AI. With permission granted, the following is sent: your message to the Brasa coach along with a context summary (goals, streak and recent logs); the photo of your dish when estimating macros from an image; the photo when analysing an outfit; and the ingredients you type when generating a recipe.</p>
+
+<div class="card warn">
+<p><b>Important note about AI.</b> These requests are processed through external providers, specifically Groq and Google (Gemini). Because their free tiers are used, <b>those providers may use the content sent to train and improve their own models.</b> That is why we ask you not to send medical records or sensitive data through these features. They are optional and the app works without them: with no permission, the coach answers using its local engine, which sends nothing.</p>
+</div>
+
+<h2>4. Approximate location (only if you press the weather button)</h2>
+<p>The Alchemy screen has a button to use your local weather when recommending a fragrance. <b>Only if you press it</b>, the app works out your approximate location from your IP address and looks up the forecast.</p>
+<p>To do that it contacts one of these services, whichever answers first: <b>ipwho.is</b>, <b>ipapi.co</b> or <b>geojs.io</b>. They receive your IP address and return an approximate latitude, longitude and city. That position is then used to query <b>Open-Meteo</b> for the temperature.</p>
+<p>The app <b>does not use GPS</b> and never asks for location permission: the accuracy is city-level, not street-level. None of this is stored on any server of ours, and if you do not press that button nothing is sent.</p>
+
+<h2>5. App updates</h2>
+<p>So that bugs can be fixed without you reinstalling, the app checks once a week whether a new version exists on <b>Expo</b>'s update service (u.expo.dev). That check transmits the version you have installed and your phone's operating system, along with the IP address inherent to any connection. None of your data or logs is sent.</p>
+
+<h2>6. Automatic failure reports</h2>
+<p>When something fails internally without showing on screen (a feature that does not respond, a screen that closes by itself, an operation that takes too long), the app records it on your device and sends it to <b>Supabase</b> so it can be fixed. This is the same infrastructure described in section 3.</p>
+<p><b>What is sent:</b> the technical error message, which part of the app it happened in, how many times it has repeated, the app version and the operating system.</p>
+<p><b>What is NOT sent:</b> your name, photos, meals, workouts, measurements or any text you have written. Before anything is stored, the app automatically strips from the message any email address, file path, IP address, identifier, key or image that might have slipped in.</p>
+<p><b>How to turn it off:</b> Settings → Diagnostics lets you disable it at any time. That screen also shows the full list of what has been recorded and lets you delete it.</p>
+
+<h2>7. Other services the app queries</h2>
+<p>The food search and barcode scanner query the open OpenFoodFacts and OpenBeautyFacts databases. These queries send the search term or the scanned code, not your personal data.</p>
+
+<h2>8. What the data is used for</h2>
+<p>Only to make the app work: showing your progress, generating coach replies, estimating macros and supporting friend rankings. <b>LumbreAI shows no advertising, does not profile users for commercial purposes and sells personal data to no one.</b> Health and fitness data is never used for advertising or marketing.</p>
+
+<h2>9. Security</h2>
+<p>All communication with servers travels encrypted over HTTPS. AI provider keys live exclusively on the server and are never bundled into the application. Access to cloud data is restricted by row-level security policies, so each account can only read and write its own.</p>
+
+<h2>10. Retention and deletion</h2>
+<p>Local data is kept on your phone for as long as the app is installed. Cloud data is kept for as long as your account exists.</p>
+<p>You can permanently delete everything from <b>Settings → Delete account</b> inside the app, or by requesting it from <a href="borrar-cuenta.html">this page</a>. Deletion removes your profile, your friendships, your pending requests and your authentication account on the server, plus the entire local database. It cannot be undone and we keep no copies. Before deleting, you can export a full backup from Settings.</p>
+
+<h2>11. Your rights</h2>
+<p>If the General Data Protection Regulation applies to you, you have the right to access your data, rectify it, erase it, restrict or object to its processing, and to portability. The app already gives you direct access and portability through export, and direct erasure from Settings. For any other request, write to the contact address.</p>
+
+<h2>12. Minors</h2>
+<p>LumbreAI is not directed at anyone below the minimum age in your country to consent to data processing. If you are a minor, use the app under the supervision of a responsible adult.</p>
+
+<h2>13. Changes to this policy</h2>
+<p>If this policy changes, the date in the header will be updated and you will be told inside the app when the change is relevant.</p>
+</div>
+<nav class="pages">
+  <a href="index.html">Inicio</a>
+  <a href="privacidad.html">Política de privacidad</a>
+  <a href="terminos.html">Términos de uso</a>
+  <a href="borrar-cuenta.html">Borrar mi cuenta</a>
+</nav>
+<footer>
+  <span data-lang="es" class="on">LumbreAI — desarrollada por Lucas Usamentiaga (lucasuazz_). Contacto: <a href="mailto:lucasusamentiaga@gmail.com">lucasusamentiaga@gmail.com</a></span>
+  <span data-lang="en">LumbreAI — developed by Lucas Usamentiaga (lucasuazz_). Contact: <a href="mailto:lucasusamentiaga@gmail.com">lucasusamentiaga@gmail.com</a></span>
+</footer>
+</div>
+<script src="_idioma.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* Marca LumbreAI: fondo tintado, nunca negro puro; texto nunca blanco puro. */
+:root {
+  --bg: #0B0C0E;
+  --surface: #131518;
+  --line: #23262B;
+  --ink: #ECEDEE;
+  --ink-dim: #A8ADB4;
+  --ink-faint: #6E747C;
+  --ember: #F0744A;
+  --gold: #E3B341;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 72px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.flame { width: 26px; height: 26px; }
+.brand b { font-size: 19px; letter-spacing: -0.2px; }
+.langs { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.langs button {
+  background: none; border: 0; color: var(--ink-dim); font: inherit; font-size: 12px; font-weight: 700;
+  padding: 5px 13px; border-radius: 999px; cursor: pointer;
+}
+.langs button[aria-pressed="true"] { background: var(--ember); color: var(--bg); }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.5px; margin: 0 0 6px; }
+.updated { color: var(--ink-faint); font-size: 13px; margin: 0 0 28px; }
+h2 { font-size: 17px; margin: 34px 0 8px; letter-spacing: -0.2px; }
+p { color: var(--ink-dim); margin: 0 0 12px; }
+a { color: var(--ember); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 24px 0; }
+.card p:last-child { margin-bottom: 0; }
+.card.warn { border-color: rgba(227, 179, 65, 0.4); }
+ol { color: var(--ink-dim); padding-left: 22px; }
+li { margin-bottom: 8px; }
+nav.pages { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+nav.pages a { font-size: 13px; text-decoration: none; color: var(--ink-dim); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; }
+nav.pages a:hover { color: var(--ink); border-color: var(--ink-faint); }
+footer { margin-top: 32px; color: var(--ink-faint); font-size: 12px; }
+[data-lang] { display: none; }
+[data-lang].on { display: block; }
