@@ -10,6 +10,7 @@ elección.
 | `privacidad.html` | Política de privacidad |
 | `terminos.html` | Términos de uso |
 | `borrar-cuenta.html` | Ruta web de borrado de cuenta |
+| `.nojekyll` | Sin él, GitHub Pages esconde `_estilo.css` y `_idioma.js` y las páginas salen sin estilos ni idioma (lección 163) |
 
 ## Dónde están publicadas
 
